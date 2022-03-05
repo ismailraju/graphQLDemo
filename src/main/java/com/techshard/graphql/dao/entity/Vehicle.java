@@ -1,7 +1,9 @@
 package com.techshard.graphql.dao.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -9,6 +11,8 @@ import java.time.LocalDate;
 
 @Data
 @EqualsAndHashCode
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 public class Vehicle implements Serializable {
 
@@ -31,7 +35,7 @@ public class Vehicle implements Serializable {
     @Column(name = "launch_date")
     private LocalDate launchDate;
 
-    private transient  String formattedDate;
+    private transient String formattedDate;
 
     // Getter and setter
     public String getFormattedDate() {

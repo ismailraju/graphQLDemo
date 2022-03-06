@@ -1,10 +1,11 @@
 # graphql-spring-boot-demo
 Demo fo GraphQL and Spring Boot
 
-Step:
-1. Run the project . in commad line ( $ mvn spring:run )
-2. Go to this URL ( http://localhost:8080/graphiql )
-3. Insert Food.
+### Step:
+1. **Run** the project . in commad line ( $ mvn spring:run )
+2. Go to this **URL** ( http://localhost:8080/graphiql )
+3. **Insert** Food.
+    ```
     mutation CREATE_STORE {
       createFood(
 
@@ -20,9 +21,11 @@ Step:
 
       }
     }
+    ```
   
- 4. Search Food.
+ 4. **Search** Food.
 
+    ```
     {
       foods{
         id
@@ -30,8 +33,10 @@ Step:
         price
       }
     }
+    ```
 
-5. Searach by id.
+5. **Search** by id.
+    ```
     {
       food(id:12){
         id
@@ -39,4 +44,5 @@ Step:
         price
       }
     }
+    ```
 

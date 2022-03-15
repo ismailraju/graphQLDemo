@@ -6,15 +6,6 @@ type Vehicle {
     launchDate: String
 }
 
-type Query {
-    vehicles(count: Int):[Vehicle]
-    vehicle(id: ID):Vehicle
-}
-type Mutation {
-    createVehicle(type: String!, modelCode: String!, brandName: String, launchDate: String):Vehicle
-
-}
-
 
 type Food{
     id:ID!
@@ -23,10 +14,13 @@ type Food{
 }
 
 type Query{
+    vehicles(count: Int):[Vehicle]
+    vehicle(id: ID):Vehicle
     foods:[Food]
     food(id:ID):Food
 }
 
 type Mutation {
+    createVehicle(type: String!, modelCode: String!, brandName: String, launchDate: String):Vehicle
     createFood(id:ID!,name:String,price:Float):Food
 }

@@ -4,7 +4,12 @@
 Demo fo GraphQL and Spring Boot
 
 ### Step:  
-1. **Run** the project . in commad line ( $ mvn spring-boot:run )
+1. **Run** the project . in commad line   
+~~~
+$ cd graphQLDemo 
+$ mvn spring-boot:run
+~~~
+ 
 2. Go to this **URL** ( http://localhost:8080/graphiql )
 3. **Insert** Food. :shipit:
     ```
